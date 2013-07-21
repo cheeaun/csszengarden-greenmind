@@ -4,27 +4,27 @@
 /* GENERAL FORMATTING */
 
 *{
-padding: 0;
-margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 html{
-background-color: #fff;
-color: #4d4d4d;
+	background-color: #fff;
+	color: #4d4d4d;
 }
 
 body{
-font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", "Lucida", "Trebuchet MS", Verdana, "Bitstream Vera Sans", sans-serif;
-color: #4d4d4d;
+	font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", "Lucida", "Trebuchet MS", Verdana, "Bitstream Vera Sans", sans-serif;
+	color: #4d4d4d;
 }
 
 body{
-font-size: 84%;
+	font-size: 84%;
 }
 
 h1,h2,h3,h4,h5,h6{
-font-family: "Georgia", "Times New Roman", serif;
-margin: .5em 0;
+	font-family: "Georgia", "Times New Roman", serif;
+	margin: .5em 0;
 }
 
 h1{font-size: 6em;}
@@ -35,339 +35,339 @@ h5{font-size: 1.5em;}
 h6{font-size: 1.4em;}
 
 p,ul,ol,blockquote,pre,dl{
-margin: 1em 0;
+	margin: 1em 0;
 }
 
 p{
-line-height: 1.7em;
+	line-height: 1.7em;
 }
 li{
-line-height: 1.4em;
+	line-height: 1.4em;
 }
 li>p{
-margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 ul,ol{
-margin-left: 3em;
+	margin-left: 3em;
 }
 
 blockquote,pre{
-background: #effaea url(images/green-quotes.png) 10px 10px no-repeat;
-color: #222;
-padding: .1em 1em;
+	background: #effaea url(images/green-quotes.png) 10px 10px no-repeat;
+	color: #222;
+	padding: .1em 1em;
 }
 
 blockquote blockquote,
 blockquote pre{
-background-color: #f7fdf5;
-color: inherit;
+	background-color: #f7fdf5;
+	color: inherit;
 }
 
 /*make dl as list module*/
 dl.list{
-margin-left: 3em;
+	margin-left: 3em;
 }
 
 dl.list dt{
-display: list-item;
+	display: list-item;
 }
 
 dl.list dd{
-border: 0;
+	border: 0;
 }
 
 pre{
-padding-top: 1em;
-padding-bottom: 1em;
-min-width: 5em;
-overflow: auto;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	min-width: 5em;
+	overflow: auto;
 }
 
 pre em,
 pre strong{
-font-style: normal;
-color: #030;
-background-color: transparent;
+	font-style: normal;
+	color: #030;
+	background-color: transparent;
 }
 
 pre,code,samp,kbd,var{
-font-family: "Lucida Console", "Andale Mono", "monotype.com", "Bitstream Vera Sans Mono", "courier new", courier, monospace;
-font-size: 1em;
+	font-family: "Lucida Console", "Andale Mono", "monotype.com", "Bitstream Vera Sans Mono", "courier new", courier, monospace;
+	font-size: 1em;
 }
 
 code,samp,kbd,var{
-line-height: 1em;
+	line-height: 1em;
 }
 
 pre, pre code, pre samp, pre kbd{
-line-height: 1.4em;
+	line-height: 1.4em;
 }
 
 code,kbd,samp,.filename,.foldername{
-background-color: #effaea;
-color: inherit;
+	background-color: #effaea;
+	color: inherit;
 }
 
 blockquote p code,
 blockquote p kbd{
-background-color: #fff;
-color: inherit;
+	background-color: #fff;
+	color: inherit;
 }
 
 var,
 var.filename,
 var.foldername{
-background-color: #ffd;
-color: inherit;
-font-style: normal;
+	background-color: #ffd;
+	color: inherit;
+	font-style: normal;
 }
 
 pre code,
 pre kbd{
-background-color: transparent;
-color: inherit;
+	background-color: transparent;
+	color: inherit;
 }
 
 dt{
-font-weight: bold;
-margin-top: 1.5em;
+	font-weight: bold;
+	margin-top: 1.5em;
 }
 
 dd{
-padding: .1em 1em;
-margin-left: 1em;
-background: transparent url(images/green-quotes-corner.png) no-repeat;
-color: #333;
-border-top: 1px solid #fff;
+	padding: .1em 1em;
+	margin-left: 1em;
+	background: transparent url(images/green-quotes-corner.png) no-repeat;
+	color: #333;
+	border-top: 1px solid #fff;
 }
 
 abbr{
-border-bottom: 0;
+	border-bottom: 0;
 }
 
 table{
-border-collapse: collapse;
-font-size: 100%;
-margin: auto;
-background-color: #effaea;
-color: inherit;
+	border-collapse: collapse;
+	font-size: 100%;
+	margin: auto;
+	background-color: #effaea;
+	color: inherit;
 }
 
 blockquote table{
-background-color: #f7fdf5;
-color: inherit;
+	background-color: #f7fdf5;
+	color: inherit;
 }
 
 caption{
-font-weight: bold;
-padding-bottom: .5em;
-text-align: center;
-margin: auto;
-width: 100%;
+	font-weight: bold;
+	padding-bottom: .5em;
+	text-align: center;
+	margin: auto;
+	width: 100%;
 }
 
 thead,th{
-border: 1px solid #fff;
-background-color: #d3f1c5;
-color: #333;
-font-weight: bold;
+	border: 1px solid #fff;
+	background-color: #d3f1c5;
+	color: #333;
+	font-weight: bold;
 }
 
 thead th{
-text-align: center;
+	text-align: center;
 }
 
 tbody{
-background: transparent url(images/green-quotes.png) 10px 10px no-repeat;
-color: inherit;
+	background: transparent url(images/green-quotes.png) 10px 10px no-repeat;
+	color: inherit;
 }
 
 tbody th{
-text-align: left;
+	text-align: left;
 }
 
 thead+tbody th,
 thead+tbody th *{
-background-color: transparent;
-color: #333;
+	background-color: transparent;
+	color: #333;
 }
 
 tfoot{
-background: transparent url(images/green-bottom.png) left bottom no-repeat;
-color: inherit;
+	background: transparent url(images/green-bottom.png) left bottom no-repeat;
+	color: inherit;
 }
 
 blockquote tfoot{
-background-image: url(images/green-bottom-bottom.png);
+	background-image: url(images/green-bottom-bottom.png);
 }
 
 td{
-border: 1px solid #fff;
+	border: 1px solid #fff;
 }
 
 td,th{
-padding: .2em .5em;
+	padding: .2em .5em;
 }
 
 del *{
-text-decoration: line-through;
+	text-decoration: line-through;
 }
 
 /*green, green links... (LoVe HAte)*/
 a{
-text-decoration: none;
-color: #3c790a;
-background-color: transparent;
+	text-decoration: none;
+	color: #3c790a;
+	background-color: transparent;
 }
 
 a:visited{
-color: #458e0b;
-background-color: transparent;
+	color: #458e0b;
+	background-color: transparent;
 }
 
 a:hover{
-color: #360;
-background-color: transparent;
-text-decoration: underline;
+	color: #360;
+	background-color: transparent;
+	text-decoration: underline;
 }
 
 a:focus,
 a:active{
-color: #6c0;
-background-color: transparent;
+	color: #6c0;
+	background-color: transparent;
 }
 
 /*i think the below way is more logical*/
 a:link img{
-border: 2px solid #d3f1c5;
-line-height: 0;
+	border: 2px solid #d3f1c5;
+	line-height: 0;
 }
 
 a:visited img,
 a:hover img,
 a:focus img,
 a:active img{
-border-color: #fff;
+	border-color: #fff;
 }
 
 input{
-vertical-align: middle;
-font-size: 1em;
-font-family: inherit;
+	vertical-align: middle;
+	font-size: 1em;
+	font-family: inherit;
 }
 
 /* ADDITIONAL FORMATTING */
 
 /*Expressive strongness*/
 strong.stronger{
-font-size: 1.2em;
+	font-size: 1.2em;
 }
 strong.very-strong{
-font-size: 1.4em;
+	font-size: 1.4em;
 }
 
 abbr, acronym{
-font-variant: small-caps;
+	font-variant: small-caps;
 }
 
 /* PRESENTATIONAL PROPERTIES */
 
 body{
-background: transparent url(images/green-corner.png) right bottom no-repeat fixed;
+	background: transparent url(images/green-corner.png) right bottom no-repeat fixed;
 }
 
 .page-wrapper{
-color: inherit;
-background: transparent url(images/green-bar.png) 0 380px repeat-x;
+	color: inherit;
+	background: transparent url(images/green-bar.png) 0 380px repeat-x;
 }
 
 #zen-intro{
-color: inherit;
-background: transparent url(images/green-head.jpg) no-repeat;
+	color: inherit;
+	background: transparent url(images/green-head.jpg) no-repeat;
 }
 
 header {
-height: 380px;
-position: relative;
-background: #fff url(images/green-head.jpg) no-repeat;
-color: inherit;
+	height: 380px;
+	position: relative;
+	background: #fff url(images/green-head.jpg) no-repeat;
+	color: inherit;
 }
 
 header h1{
-text-transform: lowercase;
-font-weight: normal;
-text-align: right;
-margin: 0;
-padding: 0;
-letter-spacing: -.05em;
-position: absolute;
-right: 10%;
-bottom: 45px;
-color: #3c790a;
-background-color: transparent;
+	text-transform: lowercase;
+	font-weight: normal;
+	text-align: right;
+	margin: 0;
+	padding: 0;
+	letter-spacing: -.05em;
+	position: absolute;
+	right: 10%;
+	bottom: 45px;
+	color: #3c790a;
+	background-color: transparent;
 }
 
 /*site description*/
 header h2{
-margin: 0;
-padding: 0;
-text-transform: lowercase;
-color: #53a620;
-background-color: transparent;
-font-weight: bold;
-text-align: right;
-position: absolute;
-right: 10%;
-bottom: 20px;
-font-size: 20px;
-line-height: 20px;
-letter-spacing: -.05em;
+	margin: 0;
+	padding: 0;
+	text-transform: lowercase;
+	color: #53a620;
+	background-color: transparent;
+	font-weight: bold;
+	text-align: right;
+	position: absolute;
+	right: 10%;
+	bottom: 20px;
+	font-size: 20px;
+	line-height: 20px;
+	letter-spacing: -.05em;
 }
 
 #zen-summary{
-float: right;
-margin-right: 10%;
-width: 40%;
-text-align: right;
-color: #d3ffbd;
-background-color: transparent;
-height: 200px;
+	float: right;
+	margin-right: 10%;
+	width: 40%;
+	text-align: right;
+	color: #d3ffbd;
+	background-color: transparent;
+	height: 200px;
 }
 
 #zen-summary a,
 footer a,
 footer a:hover,
 footer a:visited{
-color: #fff;
-background-color: #8CD966;
-padding: .4em .6em;
+	color: #fff;
+	background-color: #8CD966;
+	padding: .4em .6em;
 }
 
 #zen-preamble{
-clear: both;
-margin: 0 auto 20px;
-width: 42em;
-max-width: 96%;
-padding-top: 35px;
-padding-bottom: 30px;
-color: inherit;
-background: transparent url(images/green-line.png) center bottom no-repeat;
+	clear: both;
+	margin: 0 auto 20px;
+	width: 42em;
+	max-width: 96%;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	color: inherit;
+	background: transparent url(images/green-line.png) center bottom no-repeat;
 }
 
 #zen-preamble h3{
-text-align: center;
-font-weight: normal;
-color: #040;
-background-color: transparent;
-font-size: 2.5em;
-letter-spacing: -.03em;
+	text-align: center;
+	font-weight: normal;
+	color: #040;
+	background-color: transparent;
+	font-size: 2.5em;
+	letter-spacing: -.03em;
 }
 
 #zen-supporting{
-margin: 50px auto 10px;
-width: 65%;
-float: left;
+	margin: 50px auto 10px;
+	width: 65%;
+	float: left;
 }
 
 #zen-explanation,
@@ -375,86 +375,86 @@ float: left;
 #zen-benefits,
 #zen-requirements,
 footer{
-float: right;
-width: 35em;
-min-width: 65%;
-padding-bottom: 30px;
-margin-bottom: 20px;
-color: inherit;
-background: transparent url(images/green-line.png) center bottom no-repeat;
+	float: right;
+	width: 35em;
+	min-width: 65%;
+	padding-bottom: 30px;
+	margin-bottom: 20px;
+	color: inherit;
+	background: transparent url(images/green-line.png) center bottom no-repeat;
 }
 
 footer{
-float: right;
-width: 42em;
-color: #fff;
-background: transparent;
-position: relative;
-text-align: center;
+	float: right;
+	width: 42em;
+	color: #fff;
+	background: transparent;
+	position: relative;
+	text-align: center;
 }
 
 footer a{
-position: relative;
+	position: relative;
 }
 
 #zen-explanation h3,
 #zen-participation h3,
 #zen-benefits h3,
 #zen-requirements h3{
-font-size: 1.9em;
-font-weight: normal;
-text-align: left;
-margin-bottom: .8em;
-color: #040;
-background-color: transparent;
-letter-spacing: -.03em;
+	font-size: 1.9em;
+	font-weight: normal;
+	text-align: left;
+	margin-bottom: .8em;
+	color: #040;
+	background-color: transparent;
+	letter-spacing: -.03em;
 }
 
 .sidebar{
-margin: 90px 0 0 70%;
-font-size: .9em;
+	margin: 90px 0 0 70%;
+	font-size: .9em;
 }
 
 .sidebar .wrapper{
-margin: 0 0 3em;
-width: 18em;
+	margin: 0 0 3em;
+	width: 18em;
 }
 
 .sidebar h3{
-font-size: 1.2em;
-text-transform: uppercase;
-letter-spacing: .05em;
-background: transparent url(images/green-leaves.png) left center no-repeat;
-color: #2BAE16;
-line-height: 20px;
-min-height: 20px;
-padding-left: 35px;
-position: relative;
-left: -15px;
-margin-bottom: 1em;
-font-weight: normal;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	background: transparent url(images/green-leaves.png) left center no-repeat;
+	color: #2BAE16;
+	line-height: 20px;
+	min-height: 20px;
+	padding-left: 35px;
+	position: relative;
+	left: -15px;
+	margin-bottom: 1em;
+	font-weight: normal;
 }
 
 .sidebar p{
-margin-top: 0;
-line-height: 1.7em;
+	margin-top: 0;
+	line-height: 1.7em;
 }
 
 .sidebar li{
-line-height: 1.3em;
+	line-height: 1.3em;
 }
 
 .sidebar ul{
-margin-top: 0;
-margin-left: 1.5em;
-margin-bottom: 2em;
-list-style-image: url(images/green-bullet.png);
+	margin-top: 0;
+	margin-left: 1.5em;
+	margin-bottom: 2em;
+	list-style-image: url(images/green-bullet.png);
 }
 
 .extra1{
-clear: both;
-color: #fff;
-background: #6c3 url(images/green-bar.png) left bottom repeat-x;
-height: 100px;
-margin-bottom: 3em;
+	clear: both;
+	color: #fff;
+	background: #6c3 url(images/green-bar.png) left bottom repeat-x;
+	height: 100px;
+	margin-bottom: 3em;
 }
