@@ -1,10 +1,9 @@
-/* Green Mind v0.1 */
+/* Green Mind v0.2 */
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/3.0/  */
 
 /* GENERAL FORMATTING */
 
 *{
-/*this is not violence, ok?*/
 padding: 0;
 margin: 0;
 }
@@ -28,7 +27,6 @@ font-family: "Georgia", "Times New Roman", serif;
 margin: .5em 0;
 }
 
-/*I hate this, you know, but...*/
 h1{font-size: 6em;}
 h2{font-size: 1.8em;}
 h3{font-size: 1.7em;}
@@ -148,10 +146,6 @@ abbr{
 border-bottom: 0;
 }
 
-abbr[title]{
-border-bottom: 1px dotted #666;
-}
-
 table{
 border-collapse: collapse;
 font-size: 100%;
@@ -223,9 +217,6 @@ text-decoration: line-through;
 /*green, green links... (LoVe HAte)*/
 a{
 text-decoration: none;
-}
-
-a:link{
 color: #3c790a;
 background-color: transparent;
 }
@@ -286,38 +277,41 @@ body{
 background: transparent url(images/green-corner.png) right bottom no-repeat fixed;
 }
 
-#pageHeader{
-background: #fff url(images/green-bar.png) 0 380px repeat-x;
+.page-wrapper{
 color: inherit;
-height: 580px;
-margin: 0 auto;
+background: transparent url(images/green-bar.png) 0 380px repeat-x;
 }
 
-#pageHeader h1{
+#zen-intro{
+color: inherit;
+background: transparent url(images/green-head.jpg) no-repeat;
+}
+
+header {
+height: 380px;
+position: relative;
+background: #fff url(images/green-head.jpg) no-repeat;
+color: inherit;
+}
+
+header h1{
 text-transform: lowercase;
 font-weight: normal;
 text-align: right;
 margin: 0;
-background: transparent url(images/green-head.jpg) no-repeat;
-color: inherit;
-height: 580px;
-min-width: 380px;
-max-width: 30em;
-position: relative;
+padding: 0;
 letter-spacing: -.05em;
-}
-
-#pageHeader h1 span{
-color: #3c790a;
-background-color: transparent;
-text-decoration: none;
 position: absolute;
 right: 10%;
-bottom: 240px;
+bottom: 45px;
+color: #3c790a;
+background-color: transparent;
 }
 
 /*site description*/
-#pageHeader h2{
+header h2{
+margin: 0;
+padding: 0;
 text-transform: lowercase;
 color: #53a620;
 background-color: transparent;
@@ -325,58 +319,62 @@ font-weight: bold;
 text-align: right;
 position: absolute;
 right: 10%;
-top: 330px;
-font-size: 1.5em;
+bottom: 20px;
+font-size: 20px;
+line-height: 20px;
 letter-spacing: -.05em;
 }
 
-#quickSummary{
-position: absolute;
-right: 10%;
-top: 380px;
+#zen-summary{
+float: right;
+margin-right: 10%;
 width: 40%;
 text-align: right;
 color: #d3ffbd;
 background-color: transparent;
+height: 200px;
 }
 
-#quickSummary a,
-#footer a{
+#zen-summary a,
+footer a,
+footer a:hover,
+footer a:visited{
 color: #fff;
 background-color: #8CD966;
 padding: .4em .6em;
 }
 
-#preamble{
-margin: 50px auto 0;
+#zen-preamble{
+clear: both;
+margin: 0 auto 20px;
 width: 42em;
 max-width: 96%;
+padding-top: 35px;
 padding-bottom: 30px;
-margin-bottom: 20px;
 color: inherit;
 background: transparent url(images/green-line.png) center bottom no-repeat;
 }
 
-#preamble h3{
+#zen-preamble h3{
 text-align: center;
 font-weight: normal;
 color: #040;
 background-color: transparent;
-font-size: 2.2em;
+font-size: 2.5em;
 letter-spacing: -.03em;
 }
 
-#supportingText{
+#zen-supporting{
 margin: 50px auto 10px;
 width: 65%;
 float: left;
 }
 
-#explanation,
-#participation,
-#benefits,
-#requirements,
-#footer{
+#zen-explanation,
+#zen-participation,
+#zen-benefits,
+#zen-requirements,
+footer{
 float: right;
 width: 35em;
 min-width: 65%;
@@ -386,7 +384,7 @@ color: inherit;
 background: transparent url(images/green-line.png) center bottom no-repeat;
 }
 
-#footer{
+footer{
 float: right;
 width: 42em;
 color: #fff;
@@ -395,15 +393,15 @@ position: relative;
 text-align: center;
 }
 
-#footer a{
+footer a{
 position: relative;
 }
 
-#explanation h3,
-#participation h3,
-#benefits h3,
-#requirements h3{
-font-size: 1.5em;
+#zen-explanation h3,
+#zen-participation h3,
+#zen-benefits h3,
+#zen-requirements h3{
+font-size: 1.9em;
 font-weight: normal;
 text-align: left;
 margin-bottom: .8em;
@@ -412,22 +410,18 @@ background-color: transparent;
 letter-spacing: -.03em;
 }
 
-#linkList{
+.sidebar{
 margin: 90px 0 0 70%;
-font-size: 84.5%;
+font-size: .9em;
 }
 
-#linkList div{
+.sidebar .wrapper{
 margin: 0 0 3em;
 width: 18em;
 }
-#snav div div{
-margin: 0;
-width: auto;
-}
 
-#linkList h3{
-font-size: 1.1em;
+.sidebar h3{
+font-size: 1.2em;
 text-transform: uppercase;
 letter-spacing: .05em;
 background: transparent url(images/green-leaves.png) left center no-repeat;
@@ -437,26 +431,27 @@ min-height: 20px;
 padding-left: 35px;
 position: relative;
 left: -15px;
-margin-bottom: 1.5em;
+margin-bottom: 1em;
 font-weight: normal;
 }
 
-#linkList p{
+.sidebar p{
 margin-top: 0;
 line-height: 1.7em;
 }
 
-#linkList li{
+.sidebar li{
 line-height: 1.3em;
 }
 
-#linkList ul{
+.sidebar ul{
 margin-top: 0;
 margin-left: 1.5em;
+margin-bottom: 2em;
 list-style-image: url(images/green-bullet.png);
 }
 
-#extraDiv1{
+.extra1{
 clear: both;
 color: #fff;
 background: #6c3 url(images/green-bar.png) left bottom repeat-x;
