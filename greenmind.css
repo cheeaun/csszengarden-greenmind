@@ -1,5 +1,7 @@
-/* Green Mind v0.2 */
-/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/3.0/  */
+/* 'Green Mind' v0.2.1, by Lim Chee Aun http://cheeaun.com/ */
+/* CSS released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2013, Lim Chee Aun */
+/* GitHub: https://github.com/cheeaun/csszengarden-greenmind */
 
 /* GENERAL FORMATTING */
 
@@ -14,12 +16,12 @@ html{
 }
 
 body{
-	font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", "Lucida", "Trebuchet MS", Verdana, "Bitstream Vera Sans", sans-serif;
+	font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", "Lucida", "Trebuchet MS", Verdana, sans-serif;
 	color: #4d4d4d;
 }
 
 body{
-	font-size: 84%;
+	font-size: 90%;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -39,10 +41,10 @@ p,ul,ol,blockquote,pre,dl{
 }
 
 p{
-	line-height: 1.7em;
+	line-height: 1.5em;
 }
 li{
-	line-height: 1.4em;
+	line-height: 1.5em;
 }
 li>p{
 	margin-bottom: 0;
@@ -219,6 +221,12 @@ a{
 	text-decoration: none;
 	color: #3c790a;
 	background-color: transparent;
+	-webkit-transition-property: color, background-color;
+	-moz-transition-property: color, background-color;
+	transition-property: color, background-color;
+	-webkit-transition-duration: .3s;
+	-moz-transition-duration: .3s;
+	transition-duration: .3s;
 }
 
 a:visited{
@@ -273,10 +281,6 @@ abbr, acronym{
 
 /* PRESENTATIONAL PROPERTIES */
 
-body{
-	background: transparent url(images/green-corner.png) right bottom no-repeat fixed;
-}
-
 .page-wrapper{
 	color: inherit;
 	background: transparent url(images/green-bar.png) 0 380px repeat-x;
@@ -285,74 +289,54 @@ body{
 #zen-intro{
 	color: inherit;
 	background: transparent url(images/green-head.jpg) no-repeat;
+	padding-top: 580px;
 }
 
-header {
-	height: 380px;
-	position: relative;
-	background: #fff url(images/green-head.jpg) no-repeat;
-	color: inherit;
+header{
+	padding: 3em 0 0;
 }
 
 header h1{
+	font-size: 50px;
 	text-transform: lowercase;
 	font-weight: normal;
-	text-align: right;
+	text-align: center;
 	margin: 0;
-	padding: 0;
+	padding: 0 10px;
 	letter-spacing: -.05em;
-	position: absolute;
-	right: 10%;
-	bottom: 45px;
 	color: #3c790a;
 	background-color: transparent;
 }
 
-/*site description*/
 header h2{
+	font-size: 20px;
+	text-align: center;
 	margin: 0;
-	padding: 0;
+	padding: 0 10px;
 	text-transform: lowercase;
 	color: #53a620;
 	background-color: transparent;
 	font-weight: bold;
-	text-align: right;
-	position: absolute;
-	right: 10%;
-	bottom: 20px;
-	font-size: 20px;
 	line-height: 20px;
 	letter-spacing: -.05em;
 }
 
 #zen-summary{
-	float: right;
-	margin-right: 10%;
-	width: 40%;
-	text-align: right;
-	color: #d3ffbd;
-	background-color: transparent;
-	height: 200px;
+	padding: 1em;
+	max-width: 35em;
+	margin: auto;
 }
 
-#zen-summary a,
-footer a,
-footer a:hover,
-footer a:visited{
-	color: #fff;
-	background-color: #8CD966;
-	padding: .4em .6em;
+#zen-summary a{
+	text-decoration: underline;
 }
 
 #zen-preamble{
-	clear: both;
-	margin: 0 auto 20px;
-	width: 42em;
-	max-width: 96%;
-	padding-top: 35px;
-	padding-bottom: 30px;
+	max-width: 35em;
+	padding: 30px 1em 1em;
+	margin: auto;
 	color: inherit;
-	background: transparent url(images/green-line.png) center bottom no-repeat;
+	background: transparent url(images/green-line.png) center top no-repeat;
 }
 
 #zen-preamble h3{
@@ -364,37 +348,43 @@ footer a:visited{
 	letter-spacing: -.03em;
 }
 
-#zen-supporting{
-	margin: 50px auto 10px;
-	width: 65%;
-	float: left;
-}
-
 #zen-explanation,
 #zen-participation,
 #zen-benefits,
-#zen-requirements,
-footer{
-	float: right;
-	width: 35em;
-	min-width: 65%;
-	padding-bottom: 30px;
-	margin-bottom: 20px;
+#zen-requirements{
+	padding: 30px 1em 1em;
+	max-width: 35em;
+	margin: auto;
 	color: inherit;
-	background: transparent url(images/green-line.png) center bottom no-repeat;
+	background: transparent url(images/green-line.png) center top no-repeat;
 }
 
 footer{
-	float: right;
-	width: 42em;
-	color: #fff;
-	background: transparent;
-	position: relative;
+	background-color: #6c3;
 	text-align: center;
+	padding: 2em 1em;
+	word-spacing: 1ex;
 }
 
-footer a{
-	position: relative;
+footer a,
+footer a:visited{
+	font-weight: bold;
+	color: #fff;
+	background-color: #8CD966;
+	padding: .4em .8em;
+	white-space: nowrap;
+	-webkit-border-top-left-radius: 20px;
+	-webkit-border-bottom-right-radius: 20px;
+	-moz-border-radius-topleft: 20px;
+	-moz-border-radius-bottomright: 20px;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+footer a:hover{
+	text-decoration: none;
+	color: #fff;
+	background-color: #458e0b;
 }
 
 #zen-explanation h3,
@@ -411,13 +401,10 @@ footer a{
 }
 
 .sidebar{
-	margin: 90px 0 0 70%;
 	font-size: .9em;
-}
-
-.sidebar .wrapper{
-	margin: 0 0 3em;
-	width: 18em;
+	padding: 1em 1em 1em 2em;
+	max-width: 35em;
+	margin: auto;
 }
 
 .sidebar h3{
@@ -451,10 +438,130 @@ footer a{
 	list-style-image: url(images/green-bullet.png);
 }
 
-.extra1{
-	clear: both;
-	color: #fff;
-	background: #6c3 url(images/green-bar.png) left bottom repeat-x;
-	height: 100px;
-	margin-bottom: 3em;
+@media only screen and (min-width: 880px){
+
+	body{
+		background: transparent url(images/green-corner.png) right bottom no-repeat fixed;
+	}
+
+	.page-wrapper{
+		position: relative;
+		overflow: auto;
+		padding-bottom: 260px;
+	}
+
+	#zen-intro{
+		padding-top: 0;
+	}
+
+	header{
+		height: 380px;
+		position: relative;
+		background: #fff url(images/green-head.jpg) no-repeat;
+		color: inherit;
+		padding: 0;
+	}
+
+	header h1{
+		font-size: 80px;
+		position: absolute;
+		right: 10%;
+		bottom: 45px;
+		padding: 0;
+		text-align: right;
+	}
+
+	header h2{
+		font-size: 20px;
+		text-align: right;
+		position: absolute;
+		padding: 0;
+		right: 10%;
+		bottom: 20px;
+	}
+
+	#zen-summary{
+		float: right;
+		margin-right: 10%;
+		width: 40%;
+		text-align: right;
+		color: #d3ffbd;
+		background-color: transparent;
+		height: 200px;
+	}
+
+	#zen-summary a{
+		color: #fff;
+	}
+
+	#zen-preamble{
+		clear: both;
+		margin: 0 auto 20px;
+		width: 96%;
+		max-width: 42em;
+		padding: 35px 0 30px;
+		background-position: center bottom;
+	}
+
+	#zen-supporting{
+		margin: 50px auto 10px;
+		width: 60%;
+		float: left;
+	}
+
+	#zen-explanation,
+	#zen-participation,
+	#zen-benefits{
+		clear: right;
+		float: right;
+		padding: 0 0 30px;
+		margin-bottom: 20px;
+		background-position: center bottom;
+	}
+
+	#zen-requirements{
+		clear: right;
+		float: right;
+		padding: 0;
+		background-image: none;
+	}
+
+	footer{
+		position: absolute;
+		bottom: 0;
+		padding: 60px 0;
+		width: 100%;
+		height: 80px;
+		clear: both;
+		color: #fff;
+		background: transparent url(images/green-bar.png) left top repeat-x;
+	}
+
+	.sidebar{
+		margin: 90px 0 0 65%;
+		font-size: .9em;
+	}
+
+	.sidebar .wrapper{
+		margin: 0 0 3em;
+		width: 18em;
+	}
+
+}
+
+@media only screen and (min-width: 1300px){
+
+	header h1,
+	header h2{
+		width: 100%;
+		right: auto;
+		text-align: center;
+	}
+
+	#zen-summary{
+		float: none;
+		margin: auto;
+		text-align: center;
+	}
+
 }
