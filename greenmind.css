@@ -1,0 +1,465 @@
+/* Green Mind v0.1 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/3.0/  */
+
+/* GENERAL FORMATTING */
+
+*{
+/*this is not violence, ok?*/
+padding: 0;
+margin: 0;
+}
+
+html{
+background-color: #fff;
+color: #4d4d4d;
+}
+
+body{
+font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", "Lucida", "Trebuchet MS", Verdana, "Bitstream Vera Sans", sans-serif;
+color: #4d4d4d;
+}
+
+body{
+font-size: 84%;
+}
+
+h1,h2,h3,h4,h5,h6{
+font-family: "Georgia", "Times New Roman", serif;
+margin: .5em 0;
+}
+
+/*I hate this, you know, but...*/
+h1{font-size: 6em;}
+h2{font-size: 1.8em;}
+h3{font-size: 1.7em;}
+h4{font-size: 1.6em;}
+h5{font-size: 1.5em;}
+h6{font-size: 1.4em;}
+
+p,ul,ol,blockquote,pre,dl{
+margin: 1em 0;
+}
+
+p{
+line-height: 1.7em;
+}
+li{
+line-height: 1.4em;
+}
+li>p{
+margin-bottom: 0;
+}
+
+ul,ol{
+margin-left: 3em;
+}
+
+blockquote,pre{
+background: #effaea url(images/green-quotes.png) 10px 10px no-repeat;
+color: #222;
+padding: .1em 1em;
+}
+
+blockquote blockquote,
+blockquote pre{
+background-color: #f7fdf5;
+color: inherit;
+}
+
+/*make dl as list module*/
+dl.list{
+margin-left: 3em;
+}
+
+dl.list dt{
+display: list-item;
+}
+
+dl.list dd{
+border: 0;
+}
+
+pre{
+padding-top: 1em;
+padding-bottom: 1em;
+min-width: 5em;
+overflow: auto;
+}
+
+pre em,
+pre strong{
+font-style: normal;
+color: #030;
+background-color: transparent;
+}
+
+pre,code,samp,kbd,var{
+font-family: "Lucida Console", "Andale Mono", "monotype.com", "Bitstream Vera Sans Mono", "courier new", courier, monospace;
+font-size: 1em;
+}
+
+code,samp,kbd,var{
+line-height: 1em;
+}
+
+pre, pre code, pre samp, pre kbd{
+line-height: 1.4em;
+}
+
+code,kbd,samp,.filename,.foldername{
+background-color: #effaea;
+color: inherit;
+}
+
+blockquote p code,
+blockquote p kbd{
+background-color: #fff;
+color: inherit;
+}
+
+var,
+var.filename,
+var.foldername{
+background-color: #ffd;
+color: inherit;
+font-style: normal;
+}
+
+pre code,
+pre kbd{
+background-color: transparent;
+color: inherit;
+}
+
+dt{
+font-weight: bold;
+margin-top: 1.5em;
+}
+
+dd{
+padding: .1em 1em;
+margin-left: 1em;
+background: transparent url(images/green-quotes-corner.png) no-repeat;
+color: #333;
+border-top: 1px solid #fff;
+}
+
+abbr{
+border-bottom: 0;
+}
+
+abbr[title]{
+border-bottom: 1px dotted #666;
+}
+
+table{
+border-collapse: collapse;
+font-size: 100%;
+margin: auto;
+background-color: #effaea;
+color: inherit;
+}
+
+blockquote table{
+background-color: #f7fdf5;
+color: inherit;
+}
+
+caption{
+font-weight: bold;
+padding-bottom: .5em;
+text-align: center;
+margin: auto;
+width: 100%;
+}
+
+thead,th{
+border: 1px solid #fff;
+background-color: #d3f1c5;
+color: #333;
+font-weight: bold;
+}
+
+thead th{
+text-align: center;
+}
+
+tbody{
+background: transparent url(images/green-quotes.png) 10px 10px no-repeat;
+color: inherit;
+}
+
+tbody th{
+text-align: left;
+}
+
+thead+tbody th,
+thead+tbody th *{
+background-color: transparent;
+color: #333;
+}
+
+tfoot{
+background: transparent url(images/green-bottom.png) left bottom no-repeat;
+color: inherit;
+}
+
+blockquote tfoot{
+background-image: url(images/green-bottom-bottom.png);
+}
+
+td{
+border: 1px solid #fff;
+}
+
+td,th{
+padding: .2em .5em;
+}
+
+del *{
+text-decoration: line-through;
+}
+
+/*green, green links... (LoVe HAte)*/
+a{
+text-decoration: none;
+}
+
+a:link{
+color: #3c790a;
+background-color: transparent;
+}
+
+a:visited{
+color: #458e0b;
+background-color: transparent;
+}
+
+a:hover{
+color: #360;
+background-color: transparent;
+text-decoration: underline;
+}
+
+a:focus,
+a:active{
+color: #6c0;
+background-color: transparent;
+}
+
+/*i think the below way is more logical*/
+a:link img{
+border: 2px solid #d3f1c5;
+line-height: 0;
+}
+
+a:visited img,
+a:hover img,
+a:focus img,
+a:active img{
+border-color: #fff;
+}
+
+input{
+vertical-align: middle;
+font-size: 1em;
+font-family: inherit;
+}
+
+/* ADDITIONAL FORMATTING */
+
+/*Expressive strongness*/
+strong.stronger{
+font-size: 1.2em;
+}
+strong.very-strong{
+font-size: 1.4em;
+}
+
+abbr, acronym{
+font-variant: small-caps;
+}
+
+/* PRESENTATIONAL PROPERTIES */
+
+body{
+background: transparent url(images/green-corner.png) right bottom no-repeat fixed;
+}
+
+#pageHeader{
+background: #fff url(images/green-bar.png) 0 380px repeat-x;
+color: inherit;
+height: 580px;
+margin: 0 auto;
+}
+
+#pageHeader h1{
+text-transform: lowercase;
+font-weight: normal;
+text-align: right;
+margin: 0;
+background: transparent url(images/green-head.jpg) no-repeat;
+color: inherit;
+height: 580px;
+min-width: 380px;
+max-width: 30em;
+position: relative;
+letter-spacing: -.05em;
+}
+
+#pageHeader h1 span{
+color: #3c790a;
+background-color: transparent;
+text-decoration: none;
+position: absolute;
+right: 10%;
+bottom: 240px;
+}
+
+/*site description*/
+#pageHeader h2{
+text-transform: lowercase;
+color: #53a620;
+background-color: transparent;
+font-weight: bold;
+text-align: right;
+position: absolute;
+right: 10%;
+top: 330px;
+font-size: 1.5em;
+letter-spacing: -.05em;
+}
+
+#quickSummary{
+position: absolute;
+right: 10%;
+top: 380px;
+width: 40%;
+text-align: right;
+color: #d3ffbd;
+background-color: transparent;
+}
+
+#quickSummary a,
+#footer a{
+color: #fff;
+background-color: #8CD966;
+padding: .4em .6em;
+}
+
+#preamble{
+margin: 50px auto 0;
+width: 42em;
+max-width: 96%;
+padding-bottom: 30px;
+margin-bottom: 20px;
+color: inherit;
+background: transparent url(images/green-line.png) center bottom no-repeat;
+}
+
+#preamble h3{
+text-align: center;
+font-weight: normal;
+color: #040;
+background-color: transparent;
+font-size: 2.2em;
+letter-spacing: -.03em;
+}
+
+#supportingText{
+margin: 50px auto 10px;
+width: 65%;
+float: left;
+}
+
+#explanation,
+#participation,
+#benefits,
+#requirements,
+#footer{
+float: right;
+width: 35em;
+min-width: 65%;
+padding-bottom: 30px;
+margin-bottom: 20px;
+color: inherit;
+background: transparent url(images/green-line.png) center bottom no-repeat;
+}
+
+#footer{
+float: right;
+width: 42em;
+color: #fff;
+background: transparent;
+position: relative;
+text-align: center;
+}
+
+#footer a{
+position: relative;
+}
+
+#explanation h3,
+#participation h3,
+#benefits h3,
+#requirements h3{
+font-size: 1.5em;
+font-weight: normal;
+text-align: left;
+margin-bottom: .8em;
+color: #040;
+background-color: transparent;
+letter-spacing: -.03em;
+}
+
+#linkList{
+margin: 90px 0 0 70%;
+font-size: 84.5%;
+}
+
+#linkList div{
+margin: 0 0 3em;
+width: 18em;
+}
+#snav div div{
+margin: 0;
+width: auto;
+}
+
+#linkList h3{
+font-size: 1.1em;
+text-transform: uppercase;
+letter-spacing: .05em;
+background: transparent url(images/green-leaves.png) left center no-repeat;
+color: #2BAE16;
+line-height: 20px;
+min-height: 20px;
+padding-left: 35px;
+position: relative;
+left: -15px;
+margin-bottom: 1.5em;
+font-weight: normal;
+}
+
+#linkList p{
+margin-top: 0;
+line-height: 1.7em;
+}
+
+#linkList li{
+line-height: 1.3em;
+}
+
+#linkList ul{
+margin-top: 0;
+margin-left: 1.5em;
+list-style-image: url(images/green-bullet.png);
+}
+
+#extraDiv1{
+clear: both;
+color: #fff;
+background: #6c3 url(images/green-bar.png) left bottom repeat-x;
+height: 100px;
+margin-bottom: 3em;
+}
